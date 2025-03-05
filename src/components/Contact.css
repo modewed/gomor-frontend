@@ -1,0 +1,143 @@
+.contact {
+  background-color: var(--gray-color);
+}
+
+.contact-header {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.contact-container {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  gap: 3rem;
+}
+
+.contact-info {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+.contact-card {
+  background-color: var(--light-color);
+  border-radius: 18px;
+  padding: 2rem;
+  box-shadow: var(--shadow);
+  transition: var(--transition);
+  text-align: center;
+}
+
+.contact-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.07);
+}
+
+.contact-card-icon {
+  font-size: 2rem;
+  color: var(--primary-color);
+  margin-bottom: 1.5rem;
+}
+
+.contact-card h3 {
+  font-size: 20px;
+  line-height: 1.2;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.contact-card p {
+  font-size: 17px;
+  line-height: 1.47059;
+  color: var(--secondary-color);
+}
+
+.contact-social {
+  grid-column: span 2;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.contact-social-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: var(--primary-color);
+  color: var(--text-light);
+  transition: var(--transition);
+}
+
+.contact-social-link:hover {
+  background-color: #0077ED;
+  transform: translateY(-5px);
+}
+
+.contact-form-container {
+  background-color: var(--light-color);
+  border-radius: 18px;
+  padding: 3rem;
+  box-shadow: var(--shadow);
+}
+
+.contact-form-container h3 {
+  font-size: 24px;
+  line-height: 1.16667;
+  font-weight: 600;
+  letter-spacing: 0.009em;
+  margin-bottom: 2rem;
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 400;
+  font-size: 17px;
+  color: var(--secondary-color);
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 0.8rem 1rem;
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  font-family: 'SF Pro Text', -apple-system, BlinkMacSystemFont, sans-serif;
+  font-size: 17px;
+  transition: var(--transition);
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 2px rgba(0, 113, 227, 0.2);
+}
+
+@media (max-width: 992px) {
+  .contact-container {
+    grid-template-columns: 1fr;
+  }
+  
+  .contact-info {
+    order: 1;
+  }
+}
+
+@media (max-width: 576px) {
+  .contact-info {
+    grid-template-columns: 1fr;
+  }
+  
+  .contact-social {
+    grid-column: 1;
+  }
+} 

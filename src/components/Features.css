@@ -1,0 +1,136 @@
+.features {
+  background-color: var(--light-color);
+}
+
+.section-subtitle {
+  text-align: center;
+  font-size: 19px;
+  line-height: 1.21053;
+  font-weight: 300;
+  letter-spacing: 0.012em;
+  color: var(--secondary-color);
+  margin-bottom: 3rem;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin-bottom: 5rem;
+}
+
+.feature-item {
+  text-align: center;
+  padding: 2rem;
+  border-radius: 18px;
+  transition: var(--transition);
+}
+
+.feature-item:hover {
+  background-color: var(--gray-color);
+  transform: translateY(-5px);
+}
+
+.feature-icon {
+  font-size: 2.5rem;
+  color: var(--primary-color);
+  margin-bottom: 1.5rem;
+}
+
+.feature-item h3 {
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 24px;
+  line-height: 1.16667;
+  font-weight: 300;
+  margin-bottom: 1rem;
+}
+
+.feature-item p {
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 17px;
+  line-height: 1.47059;
+  font-weight: 300;
+  color: var(--secondary-color);
+}
+
+.features-highlight {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
+  margin-top: 5rem;
+}
+
+.highlight-content h3 {
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 32px;
+  line-height: 1.125;
+  font-weight: 300;
+  margin-bottom: 1.5rem;
+}
+
+.highlight-content p {
+  font-size: 19px;
+  line-height: 1.21053;
+  font-weight: 300;
+  color: var(--secondary-color);
+  margin-bottom: 2rem;
+}
+
+.highlight-list {
+  list-style: none;
+}
+
+.highlight-list li {
+  font-size: 17px;
+  line-height: 1.47059;
+  font-weight: 300;
+  margin-bottom: 0.8rem;
+  position: relative;
+  padding-left: 1.5rem;
+}
+
+.highlight-list li:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 10px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: var(--primary-color);
+}
+
+.highlight-image {
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: var(--shadow);
+}
+
+.highlight-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: var(--transition);
+}
+
+.highlight-image:hover img {
+  transform: scale(1.05);
+}
+
+@media (max-width: 992px) {
+  .features-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .features-highlight {
+    grid-template-columns: 1fr;
+  }
+  
+  .highlight-image {
+    order: -1;
+  }
+} 
